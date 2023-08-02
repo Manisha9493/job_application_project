@@ -1,0 +1,47 @@
+
+
+
+<div class="round-image">
+  <h1>Job Application</h1>
+</div>
+
+<div class="form">
+  
+  <input type="text" [(ngModel)]="jobapplication.title" placeholder="Enter job title" name="jobTitle" class="text">
+  <button (click)="applyButton()" class="button">Apply</button>
+  <button type="submit" value="GetAllJobs" class="btn" (click)="showText()">GetAllAppliedJobs</button>
+  <div>
+    <div *ngIf="showTextFlag" class="showtext">
+      <input type="text" [(ngModel)]="user.userId" placeholder="Enter UserId" name="userId" class="text">
+      <button type="submit" value="GetAllJobs" class="search" (click)="showTable()">Search</button>
+    </div>
+    <br /><br />
+    <div *ngIf="showTableFlag">
+      <table>
+        <thead>
+          <tr>
+            <th>JobId</th>
+            <th>JobTitle</th>
+            <!-- Add more columns as needed -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let applyjob of appliedJobs">
+            <td>{{ applyjob.jobId }}</td>
+            <td>{{ applyjob.jobTitle }}</td>
+            <!-- Add more columns as needed -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+<div class="main-container">
+
+
+<div class="form-container">
+
+    <h2>Registration</h2>
+    <form  (submit)="register()"> 
+        <div *ngIf="formErrors.firstName">{{formErrors.firstName}}</div>
+        <label> Firstname </label>
+        <input type="text" name="firstName" size="15" [(ngModel)]="userRegistration.firstName"/>
+        <br> <br>
+
+        <label> Lastname: </label>
+        <input type="text" name="lastName" size="15" [(ngModel)]="userRegistration.lastName"/> <br> <br>
+
+        <div *ngIf="formErrors.userName">{{formErrors.userName}}</div>
+        <label> Username: </label>
+        <input type="text" name="userName" size="15" [(ngModel)]="userRegistration.userName"/> <br> <br>
+        
+        <div *ngIf="formErrors.password">{{formErrors.password}}</div>
+        <label> password: </label>
+        <input type="text" name="password" size="15" [(ngModel)]="userRegistration.password"/> <br> <br>
+        
+        <div *ngIf="formErrors.repass">{{formErrors.repass}}</div>
+        <label>Re-type password:</label>
+        <input type="Password" id="repass" name="repass" [(ngModel)]="userRegistration.repass"/> <br> <br>
+        
+        <div *ngIf="formErrors.email">{{formErrors.email}}</div>
+        <label> email: </label>
+        <input type="text" name="email" size="15" [(ngModel)]="userRegistration.email"/> <br> <br>
+        
+        <div *ngIf="formErrors.dob">{{formErrors.dob}}</div>
+        <label> Date of Birth </label>
+        <input type="text" name="date" size="15" [(ngModel)]="userRegistration.dob"/> <br> <br>
+        
+        <div *ngIf="formErrors.phone">{{formErrors.phone}}</div>
+        <label> Phone Number: </label>
+        <input type="text" name="phone" size="15" [(ngModel)]="userRegistration.phone"/> <br> <br>  
+        <label>
+            Gender :
+        </label><br>
+        <div>
+        <input type="radio" name="gender" id="male" (change)="onGenderChange('male')">
+        <label for="male">Male</label>
+        </div>
+        <div>
+        <input type="radio" name="gender" id="female" (change)="onGenderChange('female')">
+        <label for="female">Female</label>
+        </div>
+        <div>
+        <input type="radio" name="gender" id="other" (change)="onGenderChange('other')">
+        <label for="Other">Other</label>
+        </div>
+
+
+        <!-- <div class="gender">
+            
+            <div *ngFor="let gender of genderArr">
+              <input type="radio" name="gender" value="{{gender.value}}" (change)="onRadioChange($event)">
+              <label>{{gender.label}}</label>
+            </div> -->
+          
+
+        <a routerLink="/login">Go to Login</a>
+         <br><br>
+         <button type="submit">Submit</button>
+
+            
+    </form>
+</div>
+</div>

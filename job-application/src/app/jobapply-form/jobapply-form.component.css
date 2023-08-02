@@ -1,0 +1,36 @@
+h1{
+    color:rgb(8, 15, 1);
+    align-items: center;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+.container {
+   
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    color: rgb(88, 29, 178);
+    font-weight: 500px;
+    font-size: larger;
+    background-color: rgba(219, 225, 233, 0.162);
+  }
+  
+  .form-container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-size: cover; 
+    width: 100%;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),
+    url('../../images/jobapply.jpg'); */
+     background-image: url('../../images/jobapply.jpg');
+    backdrop-filter: brightness(0%); 
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,32 @@
+.container {
+    background-image: url('../../images/jobsearch.jpg');
+    width: 100%;
+    height: 50vh;
+  }
+
+  .search{
+    position: relative;
+    background-color: #ca4016;
+    color: rgb(233, 219, 219);
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 420px; 
+    margin-top: 330px;
+    align-items: center;
+  }
+  
+    table {
+      width: 50%;
+      margin-top: 60px;
+      margin-left: 100px;
+      height: 30px;
+    }
+    th{
+      color: #ca4016;
+    }
+    
+  

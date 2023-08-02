@@ -1,0 +1,36 @@
+<div class="container">
+<button type="submit" value="GetAllUsersJobs" class="search" (click)="showTable()">GetAllUsersData</button>
+</div>
+
+<div *ngIf="showTableFlag">
+    <!-- Assuming you want to display information about each job application of each user -->
+<ng-container *ngFor="let user of users">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="6">UserID : {{ user.userId }}</th>
+        </tr>
+        <tr>
+          <th>JobId</th>
+          <th>JobTitle</th>
+          <th>qualification</th>
+          <th>location</th>
+          <th>percentage</th>
+          <th>yearOfPassedOut</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let jobApp of user.jobApplications">
+          <td>{{ jobApp.jobId }}</td>
+          <td>{{ jobApp.title }}</td>
+          <td>{{ jobApp.qualification }}</td>
+          <td>{{ jobApp.location }}</td>
+          <td>{{ jobApp.percentage }}</td>
+          <td>{{ jobApp.yearOfPassedOut }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </ng-container>
+  
+  </div>

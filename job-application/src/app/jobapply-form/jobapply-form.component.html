@@ -1,0 +1,22 @@
+    <div class="form-container">  
+        <h1>Job Application Form</h1>
+     <form (ngSubmit)="applyJobs()">  
+         <div class="container">  
+            <label>Title:  </label>   
+            <input type="text" placeholder="Enter title" name="title" [(ngModel)]="jobapplication.title"  required>  <br><br> 
+            <!-- <div *ngIf="!isNewUser"> -->
+            <label>UserId:  </label>   
+            <input type="text" placeholder="Enter userId" name="userId" [(ngModel)]="user.userId"  required> <br><br>
+            <!-- </div>  -->
+            <label>Qualification:  </label>   
+             <input type="text" placeholder="Enter Qualification" name="qualification" [(ngModel)]="jobapplication.qualification"  required>  <br><br>
+             <label>Location:  </label>   
+             <input type="text" placeholder="Enter location" name="location" [(ngModel)]="jobapplication.location"  required>  <br><br>
+             <label>Year of passOut:  </label>   
+             <input type="text" placeholder="Enter passedout year" name="passedout" [(ngModel)]="jobapplication.yearOfPassedOut" required>  <br><br>
+             <label>Percentage: </label>   
+             <input type="text" placeholder="Enter percentage" name="percentage" [(ngModel)]="jobapplication.percentage" required>  <br><br>
+             <button type="submit">Apply For a job</button>
+         </div>   
+     </form>     
+   </div>

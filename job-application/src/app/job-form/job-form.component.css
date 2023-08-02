@@ -1,0 +1,75 @@
+
+
+.form{
+    margin: 0 auto;
+    color: rgb(35, 8, 14);
+    font-weight: 500;
+    font-size: larger;
+    padding-top: 50px;
+    padding-left: 200px;
+  
+  }
+  .round-image {
+    background-image: url('../../images/jobsearch.jpg');
+    width: 100%;
+    height: 50vh;
+  }
+  .form .btn {
+    position: relative;
+    background-color: #ca4016;
+    color: rgb(233, 219, 219);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 70px;
+  }
+
+  .form .button{
+    position: relative;
+    background-color: #ca4016;
+    color: rgb(233, 219, 219);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 5px;
+  }
+
+  .form .text{
+    width:20%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  
+
+  .showtext{
+    width:60%;
+    padding:10px 5px 5px 200px;
+    border-radius: 10px;
+  }
+  .search{
+    position: relative;
+    background-color: #ca4016;
+    color: rgb(233, 219, 219);
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px; 
+  }
+
+
+  h1{
+    text-align: center;
+    color: yellow;
+  }
+
+
